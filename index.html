@@ -5,24 +5,31 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.tailwindcss.com"></script>
    </head>
-   <body>
+   <body class="bg-violet-400">
+         <!--Content Section-->
+         <section id="hero">
+            <!--Flex Container-->
+            <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0">
+                <!--Left Items-->
+                <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                    <h1 class="max-w-md text-4xl font-bold text-left md:text-5xl md:textleft">
+                        <span class="text-indigo-500">Font Toggle</span> for Dyslexia 
 
-      <div class="flex flex-col">
-        <div class="flex flex-row">
-          <div class="flex-1">
-            <h1 class="text-2xl">Toggle Font</h1>
-          </div>
-          <div class="flex-1">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="toggleFont()">Toggle Font</button>
-          </div>
-        </div>
-        <div class="flex flex-row">
-          <div class="flex-1">
-            <p class="text-lg">Click the button to toggle between dyslexia font and regular font.</p>
-          </div>
-        </div>
-
-
+                    </h1> 
+                    <p class="max-w-sm text-center text-gray-600 md:text-left">
+                        Try out the font toggle button to see how it can help you read better.
+                    </p>
+                    <div class="hidden md:block">
+                     <!--Toggle Button to switch between dyslexia font and regular font-->
+                        <button class="animate-bounce bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Toggle
+                        </button>
+                     </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </section>
    </body>
    <script src="toggle.js"></script>
 </html>
