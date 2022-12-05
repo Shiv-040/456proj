@@ -3,11 +3,26 @@
    <head>
       <title>Toggle Font</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
    </head>
    <body>
-      <h1>Toggle Font</h1>
-      <p>Click the button to toggle between dyslexia font and regular font.</p>
-      <button onclick="toggleFont()">Toggle Font</button>
+
+      <div class="flex flex-col">
+        <div class="flex flex-row">
+          <div class="flex-1">
+            <h1 class="text-2xl">Toggle Font</h1>
+          </div>
+          <div class="flex-1">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="toggleFont()">Toggle Font</button>
+          </div>
+        </div>
+        <div class="flex flex-row">
+          <div class="flex-1">
+            <p class="text-lg">Click the button to toggle between dyslexia font and regular font.</p>
+          </div>
+        </div>
+
+
    </body>
    <script src="toggle.js"></script>
 </html>
