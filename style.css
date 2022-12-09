@@ -1,9 +1,16 @@
 body {
     font-family: sans-serif;
 }
+
+.dyslexia-mode{
+    background-color: aqua;
+    letter-spacing: 0.35ch;
+    word-spacing: 1.225ch;
+}
+
+
     
 @font-face {
     font-family: dyslexia;
     src: url("dyslexia.ttf");
 }
-
